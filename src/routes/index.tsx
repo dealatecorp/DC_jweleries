@@ -70,7 +70,7 @@ function BrandLogo({ compact = false }: { compact?: boolean }) {
         alt="DC Shopping Mall and Jewellery"
         width={800}
         height={800}
-        className={compact ? "h-12 w-auto object-contain" : "h-16 w-auto object-contain sm:h-20"}
+        className={compact ? "h-12 w-auto object-contain sm:h-14" : "h-16 w-auto object-contain sm:h-20"}
       />
     </a>
   );
@@ -119,10 +119,10 @@ function HomePage() {
         )}
       </header>
 
-      <section className="relative min-h-[calc(100svh-65px)] overflow-hidden">
+      <section className="relative overflow-hidden">
         <div className="pointer-events-none absolute -left-20 top-10 h-[520px] w-[520px] rounded-full bg-primary/10 blur-[120px]" />
         <div className="pointer-events-none absolute -right-24 bottom-0 h-[420px] w-[420px] rounded-full bg-accent/5 blur-[110px]" />
-        <div className="relative mx-auto grid min-h-[calc(100svh-65px)] max-w-7xl gap-10 px-5 py-12 md:grid-cols-12 md:px-6 md:py-16">
+        <div className="relative mx-auto grid max-w-7xl gap-10 px-5 py-12 md:grid-cols-12 md:px-6 md:py-20 lg:min-h-[760px]">
           <div className="flex flex-col justify-center md:col-span-6">
             <p className="animate-fade-up text-[11px] uppercase tracking-[0.4em] text-primary">The Signature Edit · 2026</p>
             <h1 className="animate-fade-up mt-6 font-display text-[clamp(4.25rem,11vw,9rem)] leading-[0.82] text-foreground [animation-delay:120ms]">
