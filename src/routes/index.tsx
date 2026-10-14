@@ -53,7 +53,7 @@ function Index() {
       <StoreLocator />
       <InstagramGallery />
       <Newsletter />
-      <Footer logoUrl="/logo.jpg" />
+      <Footer logoUrl="/ananya-jewels-logo.svg" />
     </main></ShopProvider>
   );
 }

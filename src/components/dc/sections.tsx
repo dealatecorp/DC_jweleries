@@ -541,7 +541,7 @@ export function Footer({ logoUrl }: { logoUrl: string }) {
       <div className="mx-auto max-w-[1500px] px-5 lg:px-10">
         <div className="grid gap-12 lg:grid-cols-[1.2fr_3fr]">
           <div>
-            <img src={logoUrl} alt="DC Shopping Mall & Jewellery" className="h-24 w-24 rounded-full object-cover" loading="lazy" />
+            <img src={logoUrl} alt="Ananya Jewels" className="h-24 w-24 rounded-full object-cover" loading="lazy" />
             <p className="mt-6 max-w-xs text-xs font-light leading-loose text-white/60">
               Shop. Shine. Belong. A shopping mall and jewellery house built around the moments that matter.
             </p>

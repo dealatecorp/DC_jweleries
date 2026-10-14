@@ -55,9 +55,9 @@ export function Navbar() {
       <nav className="mx-auto grid max-w-[1600px] grid-cols-[auto_1fr_auto] items-center gap-4 px-5 py-3 lg:px-10">
         <a href="#top" className="flex min-w-0 items-center gap-3" data-cursor="home">
           <img
-            src="/logo.jpg"
-            alt="DC Shopping Mall & Jewellery"
-            className="h-12 w-12 shrink-0 rounded-full object-cover mix-blend-multiply transition-all duration-500 lg:h-16 lg:w-16"
+            src="/ananya-jewels-logo.svg"
+            alt="Ananya Jewels"
+            className="h-12 w-12 shrink-0 rounded-full object-cover transition-all duration-500 lg:h-16 lg:w-16"
           />
         </a>
 
@@ -155,7 +155,7 @@ export function Navbar() {
         }`}
       >
         <div className="flex items-center justify-between px-6 py-5">
-          <img src="/logo.jpg" alt="DC" className="h-12 w-12 rounded-full object-cover" />
+          <img src="/ananya-jewels-logo.svg" alt="Ananya Jewels" className="h-12 w-12 rounded-full object-cover" />
           <button aria-label="Close" onClick={() => setMobile(false)} className="text-2xl text-white">
             <FiX />
           </button>
