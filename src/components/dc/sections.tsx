@@ -127,7 +127,7 @@ export function CollectionSection() {
         <SectionHeading
           light
           eyebrow="Curated editions"
-          title="The DC Collections"
+          title="The MVS Jewel Park Collections"
           subtitle="Six worlds of craftsmanship, each with its own story."
         />
         <div className="mt-14" data-reveal>
@@ -169,7 +169,7 @@ export function EditorialSection() {
           <span className="absolute -bottom-px left-0 h-24 w-px bg-gold" />
         </div>
         <div data-reveal>
-          <p className="text-[0.6rem] uppercase tracking-[0.45em] text-royal">The DC Atelier</p>
+          <p className="text-[0.6rem] uppercase tracking-[0.45em] text-royal">The MVS Jewel Park Atelier</p>
           <h2 data-reveal-words className="mt-5 font-display text-4xl leading-[1.05] text-navy sm:text-5xl lg:text-6xl">
             Made For Your Moments
           </h2>
@@ -337,10 +337,10 @@ export function StorySection() {
   );
 }
 
-/* ---------------- 15. DC Experience horizontal scroll ---------------- */
+/* ---------------- 15. MVS Jewel Park Experience horizontal scroll ---------------- */
 const experiences = [
   { name: "Fashion", copy: "Global labels and homegrown couture under one roof." },
-  { name: "Jewellery", copy: "The DC flagship atelier and diamond salon." },
+  { name: "Jewellery", copy: "The MVS Jewel Park flagship atelier and diamond salon." },
   
   { name: "Lifestyle", copy: "Home, tech and design boutiques." },
  
@@ -352,7 +352,7 @@ export function DCExperience() {
   return (
     <section id="experience" data-horizontal-wrap className="scroll-mt-20 overflow-hidden bg-navy py-20 lg:py-24">
       <div className="mx-auto max-w-[1400px] px-5 lg:px-10">
-        <SectionHeading light eyebrow="More than jewellery" title="The DC Experience" />
+        <SectionHeading light eyebrow="More than jewellery" title="The MVS Jewel Park Experience" />
       </div>
       <div className="mt-14 overflow-x-auto pb-4 md:overflow-visible">
         <div data-horizontal-track className="flex gap-6 px-5 lg:px-10" style={{ width: "max-content" }}>
@@ -375,7 +375,7 @@ export function DCExperience() {
                 </p>
                 <h3 className="mt-3 font-display text-3xl text-white">{e.name}</h3>
                 <p className="mt-3 max-w-xs text-xs font-light leading-relaxed text-white/70">{e.copy}</p>
-                <button className="mt-5 text-xs uppercase tracking-widest text-champagne underline underline-offset-4" onClick={() => shop.info(e.name, `${e.copy}\n\nPlan your visit with a DC store. Contact the team for current brands, opening times and availability.`)}>Explore {e.name}</button>
+                <button className="mt-5 text-xs uppercase tracking-widest text-champagne underline underline-offset-4" onClick={() => shop.info(e.name, `${e.copy}\n\nPlan your visit with MVS Jewel Park. Contact the team for current brands, opening times and availability.`)}>Explore {e.name}</button>
               </div>
             </article>
           ))}
@@ -390,7 +390,7 @@ const promises = [
   { icon: LuGem, title: "Premium Quality", copy: "Hallmarked metals, hand-finished settings." },
   { icon: LuBadgeCheck, title: "Certified Jewellery", copy: "Every diamond independently graded." },
   { icon: LuShieldCheck, title: "Secure Shopping", copy: "Insured delivery, protected payments." },
-  { icon: LuHandHeart, title: "Exceptional Service", copy: "Personal styling at every DC store." },
+  { icon: LuHandHeart, title: "Exceptional Service", copy: "Personal styling at every MVS Jewel Park store." },
   { icon: LuRefreshCw, title: "Easy Returns", copy: "15-day returns and lifetime exchange." },
   { icon: LuSparkles, title: "Trusted Experience", copy: "Complimentary cleaning, forever." },
 ];
@@ -399,7 +399,7 @@ export function TrustSection() {
   return (
     <section className="bg-white py-24 lg:py-32">
       <div className="mx-auto max-w-[1300px] px-5 lg:px-10">
-        <SectionHeading eyebrow="Why DC" title="The DC Promise" />
+        <SectionHeading eyebrow="Why MVS Jewel Park" title="The MVS Jewel Park Promise" />
         <div className="mt-16 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-3">
           {promises.map((p, i) => (
             <div
@@ -421,9 +421,9 @@ export function TrustSection() {
 
 /* ---------------- 17. Store locator ---------------- */
 const stores = [
-  { city: "Hyderabad", name: "DC Flagship — Banjara Hills", address: "Road No. 12, Banjara Hills, Hyderabad 500034", hours: "10:30 AM – 9:30 PM", phone: "+91 90000 11122" },
-  { city: "Bengaluru", name: "DC Mall — Indiranagar", address: "100 Ft Road, Indiranagar, Bengaluru 560038", hours: "11:00 AM – 10:00 PM", phone: "+91 90000 11133" },
-  { city: "Mumbai", name: "DC Jewellery — Bandra West", address: "Linking Road, Bandra West, Mumbai 400050", hours: "11:00 AM – 9:00 PM", phone: "+91 90000 11144" },
+  { city: "Hyderabad", name: "MVS Jewel Park Flagship — Banjara Hills", address: "Road No. 12, Banjara Hills, Hyderabad 500034", hours: "10:30 AM – 9:30 PM", phone: "+91 90000 11122" },
+  { city: "Bengaluru", name: "MVS Jewel Park — Indiranagar", address: "100 Ft Road, Indiranagar, Bengaluru 560038", hours: "11:00 AM – 10:00 PM", phone: "+91 90000 11133" },
+  { city: "Mumbai", name: "MVS Jewel Park — Bandra West", address: "Linking Road, Bandra West, Mumbai 400050", hours: "11:00 AM – 9:00 PM", phone: "+91 90000 11144" },
 ];
 
 export function StoreLocator() {
@@ -464,7 +464,7 @@ export function StoreLocator() {
             </article>
           ))}
         </div>
-        {matchingStores.length === 0 ? <p className="mt-8 text-center text-sm text-muted-foreground">No DC store matches that search yet.</p> : null}
+        {matchingStores.length === 0 ? <p className="mt-8 text-center text-sm text-muted-foreground">No MVS Jewel Park store matches that search yet.</p> : null}
       </div>
     </section>
   );
@@ -487,7 +487,7 @@ export function InstagramGallery() {
   return (
     <section className="bg-white py-24 lg:py-32">
       <div className="mx-auto max-w-[1600px] px-5 lg:px-10">
-        <SectionHeading eyebrow="Style & inspiration" title="The DC Journal" subtitle="Follow the shine." />
+        <SectionHeading eyebrow="Style & inspiration" title="The MVS Jewel Park Journal" subtitle="Follow the shine." />
         <div className="mt-14 grid grid-cols-2 gap-2 md:grid-cols-4">
           {gallery.map((g, i) => (
             <button type="button"
@@ -517,7 +517,7 @@ export function Newsletter() {
     <section className="bg-navy py-24 lg:py-28">
       <div className="mx-auto max-w-2xl px-5 text-center lg:px-10">
         <SectionHeading light eyebrow="Keep in touch" title="Stay In The Glow" />
-        <p className="mt-6 text-sm font-light leading-loose text-white/70">Discover new collections and find your next favourite with the DC team.</p>
+        <p className="mt-6 text-sm font-light leading-loose text-white/70">Discover new collections and find your next favourite with the MVS Jewel Park team.</p>
         <div className="mt-10"><MagneticButton variant="glass" onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}>Connect with a store</MagneticButton></div>
       </div>
     </section>
@@ -528,8 +528,8 @@ export function Newsletter() {
 const footerCols = [
   { title: "Shop", links: ["Rings", "Earrings", "Necklaces", "Bangles", "Chains"] },
   { title: "Collections", links: ["New Arrivals", "Wedding", "Diamond", "Festive", "Everyday"] },
-  { title: "DC Mall", links: ["Fashion",  "Events"] },
-  { title: "About DC", links: ["Our Story", "Craftsmanship", "Careers", "Press", "Sustainability"] },
+  { title: "MVS Jewel Park", links: ["Fashion",  "Events"] },
+  { title: "About MVS Jewel Park", links: ["Our Story", "Craftsmanship", "Careers", "Press", "Sustainability"] },
   { title: "Customer Care", links: ["Track Order", "Returns", "Care Guide", "Size Guide", "FAQs"] },
   { title: "Contact", links: ["care@dcjewellery.com", "+91 90000 11122", "Banjara Hills, Hyderabad"] },
 ];
@@ -541,11 +541,11 @@ export function Footer({ logoUrl }: { logoUrl: string }) {
       <div className="mx-auto max-w-[1500px] px-5 lg:px-10">
         <div className="grid gap-12 lg:grid-cols-[1.2fr_3fr]">
           <div>
-            <img src={logoUrl} alt="Ananya Jewels" className="h-24 w-24 rounded-full object-cover" loading="lazy" />
+            <img src={logoUrl} alt="MVS Jewel Park" className="h-24 w-24 rounded-full object-cover" loading="lazy" />
             <p className="mt-6 max-w-xs text-xs font-light leading-loose text-white/60">
               Shop. Shine. Belong. A shopping mall and jewellery house built around the moments that matter.
             </p>
-            <a href="#contact" className="mt-7 inline-block text-sm text-champagne underline">Connect with DC</a>
+            <a href="#contact" className="mt-7 inline-block text-sm text-champagne underline">Connect with MVS Jewel Park</a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-6">
             {footerCols.map((col) => (
@@ -557,7 +557,7 @@ export function Footer({ logoUrl }: { logoUrl: string }) {
                       <button type="button" onClick={() => {
                         if (col.title === "Shop" || col.title === "Collections") shop.browse(l);
                         else if (col.title === "Contact") document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
-                        else shop.info(l, col.title === "DC Mall" ? "Explore the DC experience and contact a store for current brands, events and opening times." : l === "Care Guide" ? "Store jewellery separately in a soft pouch. Avoid contact with perfume, chlorine and harsh cleaners. Ask the store about care appropriate for your particular gemstone and setting." : l === "Size Guide" ? "For an accurate fit, visit a store to have your ring or wrist size measured. Bring an existing piece that fits well, and let the team know whether you prefer a close or relaxed fit." : l === "Track Order" ? "Please contact the store where you placed your order with your order reference. Online order tracking is not available here yet." : "Contact the DC team for information about " + l.toLowerCase() + ". The store can answer your questions and provide the current details.");
+                        else shop.info(l, col.title === "MVS Jewel Park" ? "Explore the MVS Jewel Park experience and contact a store for current brands, events and opening times." : l === "Care Guide" ? "Store jewellery separately in a soft pouch. Avoid contact with perfume, chlorine and harsh cleaners. Ask the store about care appropriate for your particular gemstone and setting." : l === "Size Guide" ? "For an accurate fit, visit a store to have your ring or wrist size measured. Bring an existing piece that fits well, and let the team know whether you prefer a close or relaxed fit." : l === "Track Order" ? "Please contact the store where you placed your order with your order reference. Online order tracking is not available here yet." : "Contact the MVS Jewel Park team for information about " + l.toLowerCase() + ". The store can answer your questions and provide the current details.");
                       }} className="text-left text-xs font-light text-white/65 transition-colors hover:text-white">{l}</button>
                     </li>
                   ))}
@@ -568,7 +568,7 @@ export function Footer({ logoUrl }: { logoUrl: string }) {
         </div>
         <div className="gold-rule mt-16" />
         <div className="mt-6 flex flex-col items-center justify-between gap-3 text-[0.6rem] uppercase tracking-[0.25em] text-white/45 sm:flex-row">
-          <p>© {new Date().getFullYear()} DC Shopping Mall &amp; Jewellery</p>
+          <p>© {new Date().getFullYear()} MVS Jewel Park</p>
           <p>Shop | Shine | Belong</p>
         </div>
       </div>

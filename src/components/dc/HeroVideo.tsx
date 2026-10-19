@@ -21,7 +21,7 @@ export function HeroVideo() {
 
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
         <p className="mb-6 text-[0.6rem] uppercase tracking-[0.55em] text-champagne">
-          DC Shopping Mall &amp; Jewellery
+          MVS Jewel Park
         </p>
         <h1
           data-reveal-words
@@ -39,7 +39,7 @@ export function HeroVideo() {
             Explore Collection
           </MagneticButton>
           <MagneticButton variant="glass" className="border-gold/70 text-champagne" onClick={() => document.querySelector("#experience")?.scrollIntoView({ behavior: "smooth" })}>
-            Discover DC
+            Discover MVS Jewel Park
           </MagneticButton>
         </div>
       </div>

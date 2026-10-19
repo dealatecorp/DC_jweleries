@@ -10,7 +10,7 @@ const megaMenus: Record<string, { links: string[]; caption: string }> = {
   },
   COLLECTIONS: {
     links: ["New Arrivals", "Best Sellers", "Wedding", "Diamond", "Gold", "Festive", "Everyday", "Premium"],
-    caption: "Curated by DC",
+    caption: "Curated by MVS Jewel Park",
   },
   GIFTING: {
     links: ["Birthday", "Wedding", "Anniversary", "Engagement", "Festive", "Special Moments"],
@@ -51,12 +51,12 @@ export function Navbar() {
           : "border-b border-white/10 bg-transparent"
       }`}
     >
-      <Marquee items={["Welcome to DC Shopping Mall & Jewellery", "Discover the New Collection", "Shop · Shine · Belong", "Plan Your Visit"]} duration={32} className="bg-navy py-2.5 text-white border-b border-gold/30" itemClassName="text-[0.6rem] uppercase tracking-[0.22em]" />
+      <Marquee items={["Welcome to MVS Jewel Park", "Discover the New Collection", "Shop · Shine · Belong", "Plan Your Visit"]} duration={32} className="bg-navy py-2.5 text-white border-b border-gold/30" itemClassName="text-[0.6rem] uppercase tracking-[0.22em]" />
       <nav className="mx-auto grid max-w-[1600px] grid-cols-[auto_1fr_auto] items-center gap-4 px-5 py-3 lg:px-10">
         <a href="#top" className="flex min-w-0 items-center gap-3" data-cursor="home">
           <img
-            src="/ananya-jewels-logo.svg"
-            alt="Ananya Jewels"
+            src="/mvs-jewel-park-logo.svg"
+            alt="MVS Jewel Park"
             className="h-12 w-12 shrink-0 rounded-full object-cover transition-all duration-500 lg:h-16 lg:w-16"
           />
         </a>
@@ -149,13 +149,14 @@ export function Navbar() {
       {/* Mobile drawer */}
       <div
         inert={!mobile}
+        aria-hidden={!mobile}
         onKeyDown={(event) => { if (event.key === "Escape") setMobile(false); }}
-        className={`fixed inset-0 z-50 bg-navy transition-transform duration-500 lg:hidden ${
+        className={`fixed inset-0 z-[60] h-dvh min-h-screen isolate overflow-y-auto overscroll-contain bg-navy opacity-100 transition-transform duration-500 lg:hidden ${
           mobile ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="flex items-center justify-between px-6 py-5">
-          <img src="/ananya-jewels-logo.svg" alt="Ananya Jewels" className="h-12 w-12 rounded-full object-cover" />
+          <img src="/mvs-jewel-park-logo.svg" alt="MVS Jewel Park" className="h-12 w-12 rounded-full object-cover" />
           <button aria-label="Close" onClick={() => setMobile(false)} className="text-2xl text-white">
             <FiX />
           </button>
